@@ -32,9 +32,7 @@
 header {
     background-color: rgba(0, 0, 0, 0.65);
     padding: 1.5625rem 0 0.75rem;
-    position: fixed;
     width: 100%;
-    z-index: 2;
 }
 
 .container {
@@ -174,22 +172,4 @@ header nav {
     margin-left: 15px;
     text-align: center;
     margin-bottom: 20px;
-}
-.block{
-    width: 80%;
-    height: 900px;
-    background-color: black;
-    margin: auto;
-}
-.block:first-of-type{
-    background-color: red;
-    position: relative;
-    z-index: 1;
-}
-
-.block:last-of-type{
-    background-color: yellow;
-    position: relative;
-    top: -50px;
-    z-index: 0;
 }
