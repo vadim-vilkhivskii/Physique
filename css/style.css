@@ -1,26 +1,38 @@
 @font-face {
     font-family: 'Metropolis';
-    src: url('../../fonts/Metropolis-Medium.eot');
-    src: url('../../fonts/Metropolis-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/Metropolis-Medium.woff2') format('woff2'),
-    url('../../fonts/Metropolis-Medium.woff') format('woff'),
-    url('../../fonts/Metropolis-Medium.ttf') format('truetype'),
-    url('../../fonts/Metropolis-Medium.svg#Metropolis-Medium') format('svg');
+    src: url('../fonts/Metropolis-Medium.eot');
+    src: url('../fonts/Metropolis-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-Medium.woff2') format('woff2'),
+    url('../fonts/Metropolis-Medium.woff') format('woff'),
+    url('../fonts/Metropolis-Medium.ttf') format('truetype'),
+    url('../fonts/Metropolis-Medium.svg#Metropolis-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('../../fonts/BebasNeueRegular.eot');
-    src: url('../../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
-    url('../../fonts/BebasNeueRegular.woff2') format('woff2'),
-    url('../../fonts/BebasNeueRegular.woff') format('woff'),
-    url('../../fonts/BebasNeueRegular.ttf') format('truetype'),
-    url('../../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+    url('../fonts/BebasNeueRegular.woff') format('woff'),
+    url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+    url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../fonts/Metropolis-Light.eot');
+    src: url('../fonts/Metropolis-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Metropolis-Light.woff2') format('woff2'),
+    url('../fonts/Metropolis-Light.woff') format('woff'),
+    url('../fonts/Metropolis-Light.ttf') format('truetype'),
+    url('../fonts/Metropolis-Light.svg#Metropolis-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
 
 
 * {
@@ -29,9 +41,34 @@
     font-size: inherit;
 }
 
-header {
+.header {
     background-color: rgba(0, 0, 0, 0.65);
     padding: 1.5625rem 0 0.75rem;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+h1 {
+    position: absolute;
+    bottom: 58px;
+    left: 40%;
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    border-bottom: #ff0000 solid 3px;
+}
+.banner {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
+.banner img {
+
+}
+
+.banner__back {
     width: 100%;
 }
 
@@ -123,7 +160,7 @@ header .btn.grey:before {
 
 }
 
-.container:after, header nav ul:after  {
+.container:after, header nav ul:after {
     content: "";
     display: block;
     clear: both;
@@ -153,12 +190,14 @@ header nav ul li {
     margin-right: 16px;
     border-bottom: solid 4px transparent;
 }
-header nav ul li:hover a, header nav ul li.active a{
+
+header nav ul li:hover a, header nav ul li.active a {
     border-bottom: solid 4px #fa090a;
 
 }
+
 header nav {
-   float: left;
+    float: left;
 }
 
 .soc_icon {
